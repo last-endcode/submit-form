@@ -217,11 +217,10 @@ form {
   color: #333;
 }
 
-
 .group-btn {
-  display:flex;
+  display: flex;
   justify-content: space-between;
-  gap:1.2rem;
+  gap: 1.2rem;
 }
 .submit-btn,
 .reset-btn {
@@ -239,3 +238,4 @@ form {
   box-shadow: var(--dark-shadow);
   cursor: pointer;
   margin-top: 2rem;
+}
