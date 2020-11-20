@@ -130,3 +130,105 @@ p {
 Form
 ===============
 */
+.container {
+  max-width: 35rem;
+  margin: 6rem auto;
+  background: var(--clr-white);
+  box-shadow: var(--dark-shadow);
+  border-radius: var(--radius);
+}
+
+/* header */
+.container header {
+  height: 210px;
+  background: var(--clr-ui-dark-blue);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  border-top-left-radius: var(--radius);
+  border-top-right-radius: var(--radius);
+}
+
+.container .header-title {
+  color: var(--clr-white);
+}
+
+.close-btn {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  width: 3rem;
+  height: 3rem;
+  border-radius: 50%;
+  background: #2f316e;
+  color: var(--clr-white);
+  /* menghilangkan garis border */
+  border-color: transparent;
+  cursor: pointer;
+}
+
+.close-btn .fas {
+  font-size: 1.25rem;
+}
+
+/* posisikan form ditengah */
+form {
+  /* max 350px */
+  max-width: 350px;
+  /* pindahkan ketengah */
+  margin: 0 auto;
+  /* beri jarak top/bottom kebawah agar tidak merempet
+  dgn header */
+  padding: 4rem 0;
+}
+
+/* beri jarak antar form-control */
+.form-control {
+  margin-bottom: 2rem;
+}
+
+/* modified label */
+.form-control label {
+  display: block;
+  text-transform: capitalize;
+  font-size: 1rem;
+  font-weight: bold;
+  letter-spacing: var(--spacing);
+  padding-left: 0.5rem;
+}
+
+/* modified input */
+.form-input {
+  /* dont forget use 100% depending on
+  max-width in form */
+  width: 100%;
+  border: none;
+  border-bottom: 2px solid #ccc;
+  /* here 0.5rem same with padding-left label
+  agar sejajar */
+  padding: 0.75rem 0.5rem;
+  text-transform: capitalize;
+  color: #333;
+}
+
+/* for color placeholder */
+.form-input::placeholder {
+  color: #333;
+}
+
+.submit-btn {
+  display: block;
+  background: var(--clr-ui-dark-blue);
+  color: var(--clr-white);
+  font-size: 1.25rem;
+  width: 230px;
+  height: 65px;
+  margin: 0 auto;
+  text-transform: capitalize;
+  border: none;
+  border-radius: 40px;
+  border-color: transparent;
+  box-shadow: var(--dark-shadow);
+  cursor: pointer;
+  margin-top: 3rem;
