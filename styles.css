@@ -217,18 +217,25 @@ form {
   color: #333;
 }
 
-.submit-btn {
+
+.group-btn {
+  display:flex;
+  justify-content: space-between;
+  gap:1.2rem;
+}
+.submit-btn,
+.reset-btn {
   display: block;
   background: var(--clr-ui-dark-blue);
   color: var(--clr-white);
   font-size: 1.25rem;
   width: 230px;
-  height: 65px;
+  height: 45px;
   margin: 0 auto;
   text-transform: capitalize;
   border: none;
-  border-radius: 40px;
+  border-radius: 15px;
   border-color: transparent;
   box-shadow: var(--dark-shadow);
   cursor: pointer;
-  margin-top: 3rem;
+  margin-top: 2rem;
